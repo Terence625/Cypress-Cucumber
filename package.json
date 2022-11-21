@@ -4,6 +4,10 @@
   "repository": "https://github.com/Terence625/Cypress-Cucumber.git",
   "author": "Terence Tian <terence.tian@akqa.com>",
   "license": "MIT",
+  "scripts": {
+    "cy:open": "cypress open --e2e --browser chrome --env configFile=cypress.prod",
+    "cy:run": "cypress run --e2e --browser chrome --env configFile=cypress.prod"
+  },
   "devDependencies": {
     "@badeball/cypress-cucumber-preprocessor": "^14.0.0",
     "@bahmutov/cypress-esbuild-preprocessor": "^2.1.5",

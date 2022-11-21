@@ -1,0 +1,6 @@
+{
+  "status": "401",
+  "error_code": "ERR_CSMS_00000012",
+  "description": "Account validation failed",
+  "more_info": "No account found with the provided details."
+}

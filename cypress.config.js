@@ -17,6 +17,8 @@ function getConfigurationByFile(file) {
 
 module.exports = defineConfig({
   e2e: {
+    userAgent:
+      "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36",
     specPattern: "**/*.feature",
     async setupNodeEvents(on, config) {
       const file = config.env.configFile || "test";
@@ -52,11 +54,6 @@ module.exports = defineConfig({
         };
       });
     },
-  },
-  component: {
-    framework: "react",
-    bundler: "webpack",
-    webpackConfig: require("../webpack.config"),
   },
   viewportWidth: 1200,
   viewportHeight: 800,
