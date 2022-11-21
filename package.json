@@ -11,5 +11,16 @@
     "cypress": "^11.1.0",
     "cypress-wait-for-stable-dom": "^0.1.0",
     "prettier": "^2.7.1"
+  },
+  "cypress-cucumber-preprocessor": {
+    "nonGlobalStepDefinitions": true,
+    "stepDefinitions": [
+      "cypress/e2e/[filepart]/common/*.{js,ts}",
+      "cypress/e2e/[filepath]/*.{js,mjs,ts,tsx}",
+      "cypress/e2e/[filepath]*.{js,mjs,ts,tsx}"
+    ],
+    "html": {
+      "enabled": true
+    }
   }
 }
