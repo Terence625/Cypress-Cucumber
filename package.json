@@ -1,0 +1,15 @@
+{
+  "name": "Cypress-Cucumber",
+  "version": "1.0.0",
+  "repository": "https://github.com/Terence625/Cypress-Cucumber.git",
+  "author": "Terence Tian <terence.tian@akqa.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "@badeball/cypress-cucumber-preprocessor": "^14.0.0",
+    "@bahmutov/cypress-esbuild-preprocessor": "^2.1.5",
+    "@simonsmith/cypress-image-snapshot": "^6.0.0",
+    "cypress": "^11.1.0",
+    "cypress-wait-for-stable-dom": "^0.1.0",
+    "prettier": "^2.7.1"
+  }
+}
