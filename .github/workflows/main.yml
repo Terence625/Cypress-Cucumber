@@ -28,7 +28,7 @@ jobs:
         uses: actions/upload-artifact@v2
         if: always()
         with: 
-          name: cucumber-report
+          name: github-pages
           path: ./cucumber-report.html
       - name: Deploy to GitHub Pages
         if: always()
