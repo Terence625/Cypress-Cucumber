@@ -13,3 +13,9 @@ jobs:
         with:
           browser: chrome
           env: configFile=cypress.prod
+      - name: upload cucumber report
+        uses: actions/upload-artifact@v2
+        with: 
+          name: cucumber-report
+          path: cucumber-report.html
+      
