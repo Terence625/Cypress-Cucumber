@@ -22,13 +22,16 @@ jobs:
           browser: chrome
           env: configFile=cypress.prod
       - name: Setup Pages
+        if: always()
         uses: actions/configure-pages@v2
       - name: upload cucumber report
         uses: actions/upload-artifact@v2
+        if: always()
         with: 
           name: cucumber-report
           path: ./cucumber-report.html
       - name: Deploy to GitHub Pages
+        if: always()
         id: deployment
         uses: actions/deploy-pages@v1
       
