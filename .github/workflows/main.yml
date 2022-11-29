@@ -24,7 +24,7 @@ jobs:
         uses: actions/upload-artifact@v2
         with: 
           name: cucumber-report
-          path: cucumber-report.html
+          path: ./cucumber-report.html
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v1
