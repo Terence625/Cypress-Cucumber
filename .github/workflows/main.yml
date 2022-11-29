@@ -2,6 +2,11 @@ name: Cypress Tests
 
 on: [push]
 
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
 jobs:
   cypress-run:
     runs-on: ubuntu-20.04
@@ -13,9 +18,14 @@ jobs:
         with:
           browser: chrome
           env: configFile=cypress.prod
+      - name: Setup Pages
+        uses: actions/configure-pages@v2
       - name: upload cucumber report
         uses: actions/upload-artifact@v2
         with: 
           name: cucumber-report
           path: cucumber-report.html
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v1
       
