@@ -57,6 +57,5 @@ module.exports = defineConfig({
   },
   viewportWidth: 1200,
   viewportHeight: 800,
-  video: false,
   responseTimeout: 60000,
 });

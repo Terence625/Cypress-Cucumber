@@ -1,6 +1,10 @@
 # Caches and auto-generated dirs
 node_modules/
 public
+videos
+screenshots
+snapshots
+cucumber-messages.ndjson
 
 # OS garbage
 .DS_Store
@@ -14,9 +18,3 @@ yarn-error.log*
 # IDE project dirs
 .idea/
 .vscode/
-
-#ignore the diff file in snapshots folder
-cypress/snapshots/*/*/*/*/*
-screenshots
-cucumber-messages.ndjson
-cucumber-report.html
