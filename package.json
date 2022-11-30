@@ -24,7 +24,8 @@
       "cypress/e2e/[filepath]*.{js,mjs,ts,tsx}"
     ],
     "html": {
-      "enabled": true
+      "enabled": true,
+      "output": "./public/index.html"
     }
   }
 }
