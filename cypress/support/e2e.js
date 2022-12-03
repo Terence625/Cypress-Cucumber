@@ -22,11 +22,18 @@ import { registerCommand } from "cypress-wait-for-stable-dom";
 
 registerCommand();
 addMatchImageSnapshotCommand({
-  customSnapshotsDir: "./cypress/snapshots",
   comparisonMethod: "ssim",
-  //bezkrovny will downsample the image and perform fast (default), 
+  //bezkrovny will downsample the image and perform fast (default),
   //to with a higher accuracy, change it to { ssim: "fast" }
   customDiffConfig: { ssim: "bezkrovny" },
   failureThreshold: 0.01,
   failureThresholdType: "percent",
+});
+//ignore the uncaught exception "Cannot read properties of undefined (reading 'aIOf')"
+Cypress.on("uncaught:exception", (err, runnable) => {
+  // returning false here prevents Cypress from
+  // failing the test
+  if (err.message.includes("aIOf")) {
+    return false;
+  }
 });

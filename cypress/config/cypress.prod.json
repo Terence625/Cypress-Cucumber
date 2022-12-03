@@ -1,8 +1,0 @@
-{
-    "baseUrl": "https://www.australiansuper.com/",
-    "env": {
-      "baseApiUrl": "https://apis.australiansuper.com/",
-      "apiKey": "77d132b3-3e2c-4302-8307-4e295394be3b"
-    }
-  }
-  

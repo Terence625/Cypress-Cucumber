@@ -5,8 +5,8 @@
   "author": "Terence Tian <terence.tian@akqa.com>",
   "license": "MIT",
   "scripts": {
-    "cy:open": "cypress open --e2e --browser chrome --env configFile=cypress.prod",
-    "cy:run": "cypress run --e2e --browser chrome --env configFile=cypress.prod"
+    "cy:open": "cypress open --e2e --browser chrome --config-file cypress/config/cypress.config.prod.js",
+    "cy:run": "cypress run --e2e --browser chrome --config-file cypress/config/cypress.config.prod.js"
   },
   "devDependencies": {
     "@badeball/cypress-cucumber-preprocessor": "^14.0.0",
