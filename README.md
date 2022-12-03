@@ -1,4 +1,7 @@
 # Cypress-Cucumber
+[![Cypress Tests](https://github.com/Terence625/Cypress-Cucumber/actions/workflows/main.yml/badge.svg)](https://github.com/Terence625/Cypress-Cucumber/actions/workflows/main.yml)
+[![pages-build-deployment](https://github.com/Terence625/Cypress-Cucumber/actions/workflows/pages/pages-build-deployment/badge.svg)](https://github.com/Terence625/Cypress-Cucumber/actions/workflows/pages/pages-build-deployment)
+
 Cypress e2e test for australianSuper combine my super feature with BDD cucumber implementation
 ## Dependencies
 List of dependencies required to execute this boilerplate performance test
@@ -79,4 +82,7 @@ addMatchImageSnapshotCommand({
 ```
 Here, we use structural similarity index measure (SSIM) for image diff and set the failure threshold as 1%.
 ### 3. Report:
-After cypress run is finished, a report will be generated under cypressTests folder : cucumber-report.html. An example will be as follow:
+After cypress run is finished, a report will be generated under public folder : index.html. This html is hosted by github page:https://terence625.github.io/Cypress-Cucumber/
+
+The report will capture failed steps with screenshots and screenshots from visual test. An example will be as follow:
+![image](https://user-images.githubusercontent.com/46805148/205429921-a0c03254-2f17-4c47-8c22-ef998354e13e.png)
