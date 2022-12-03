@@ -15,7 +15,7 @@ jobs:
         uses: cypress-io/github-action@v4.2.2
         with:
           browser: chrome
-          env: configFile=cypress.prod
+          config-file: cypress/config/cypress.config.prod.js
       - name: Setup Pages
         if: always()
         uses: actions/configure-pages@v2
